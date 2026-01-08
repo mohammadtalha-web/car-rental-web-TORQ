@@ -1,0 +1,349 @@
+@import url('../../assets/css/premium-ui.css');
+
+/* Admin Layout Overrides */
+body {
+    background-color: #f1f3f5 !important;
+}
+
+.brand {
+    background: var(--premium-primary) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.brand a {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    color: #fff !important;
+    padding-left: 20px;
+}
+
+.ts-sidebar {
+    background: var(--premium-dark) !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.ts-sidebar-menu .ts-label {
+    color: rgba(255, 255, 255, 0.4);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.ts-sidebar-menu a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 15px 20px;
+    transition: all 0.3s ease;
+}
+
+.ts-sidebar-menu a:hover,
+.ts-sidebar-menu li.open>a {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--premium-secondary) !important;
+}
+
+.ts-sidebar-menu li i {
+    color: var(--premium-secondary);
+    width: 20px;
+}
+
+.ts-sidebar-menu>.open>a {
+    border-left: 4px solid var(--premium-secondary);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.content-wrapper {
+    background-color: #f1f3f5 !important;
+    padding: 60px 50px !important;
+    margin-top: 60px;
+}
+
+.page-title {
+    font-family: 'Syne', sans-serif !important;
+    font-size: 48px !important;
+    font-weight: 800 !important;
+    margin-bottom: 50px !important;
+    border: none !important;
+    color: var(--premium-dark) !important;
+    text-transform: capitalize !important;
+    letter-spacing: -1.5px !important;
+}
+
+/* Dashboard Specific Cards */
+.stat-panel {
+    border-radius: 25px !important;
+    overflow: hidden !important;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04) !important;
+    background: #fff !important;
+    border: 1px solid rgba(0, 0, 0, 0.02) !important;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+}
+
+.stat-panel:hover {
+    transform: translateY(-8px) scale(1.02) !important;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08) !important;
+}
+
+.stat-panel-number {
+    font-family: 'Syne', sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.stat-panel-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    opacity: 0.8;
+}
+
+.panel-footer {
+    background: rgba(0, 0, 0, 0.02) !important;
+    border: none !important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800 !important;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 1.5px !important;
+    padding: 20px !important;
+    color: var(--premium-dark) !important;
+    transition: all 0.3s ease;
+    border-top: 1px solid rgba(0, 0, 0, 0.03) !important;
+}
+
+.panel-footer:hover {
+    background: var(--premium-secondary) !important;
+    color: #fff !important;
+}
+
+/* Profile Nav */
+.ts-profile-nav .ts-account>a {
+    background: transparent !important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.ts-profile-nav .ts-account ul li a {
+    background: #fff !important;
+    color: var(--premium-dark) !important;
+    border-bottom: 1px solid #eee;
+}
+
+.ts-profile-nav .ts-account ul li a:hover {
+    background: var(--premium-secondary) !important;
+}
+
+/* Generic Panels for Table Pages */
+.panel.panel-default {
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+    background: #fff;
+    margin-bottom: 30px;
+}
+
+.panel-heading {
+    background: var(--premium-primary) !important;
+    color: #fff !important;
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    padding: 15px 25px !important;
+    border-radius: 20px 20px 0 0 !important;
+    border: none !important;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+.panel-body {
+    padding: 30px !important;
+    background: transparent !important;
+}
+
+/* Table Customization */
+.table {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 14px !important;
+    border-collapse: separate !important;
+    border-spacing: 0 12px !important;
+    /* Increased spacing */
+    margin-top: -12px !important;
+    border: none !important;
+}
+
+.table thead th {
+    background: var(--premium-secondary) !important;
+    color: var(--premium-dark) !important;
+    border: none !important;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    padding: 15px 20px !important;
+}
+
+.table thead th:first-child {
+    border-radius: 12px 0 0 12px;
+}
+
+.table thead th:last-child {
+    border-radius: 0 12px 12px 0;
+}
+
+.table tbody tr {
+    background: #fff !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+    transition: all 0.3s ease;
+}
+
+.table tbody tr:hover {
+    transform: scale(1.005);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    z-index: 10;
+}
+
+.table tbody td {
+    padding: 18px 20px !important;
+    border: none !important;
+    vertical-align: middle !important;
+}
+
+.table tbody tr td:first-child {
+    border-radius: 12px 0 0 12px;
+}
+
+.table tbody tr td:last-child {
+    border-radius: 0 12px 12px 0;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: #fafbfc !important;
+}
+
+.btn-primary {
+    background-color: var(--premium-primary) !important;
+    border: none !important;
+    border-radius: 8px !important;
+}
+
+.btn-info {
+    background-color: var(--premium-secondary) !important;
+    color: var(--premium-dark) !important;
+    border: none !important;
+}
+
+/* Form Styling */
+.form-control,
+select.form-control,
+textarea.form-control {
+    border-radius: 12px !important;
+    border: 1px solid #e0e0e0 !important;
+    padding: 12px 15px !important;
+    height: auto !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 14px !important;
+    box-shadow: none !important;
+    transition: all 0.3s ease !important;
+}
+
+.form-control:focus {
+    border-color: var(--premium-secondary) !important;
+    box-shadow: 0 0 0 4px rgba(232, 195, 161, 0.1) !important;
+}
+
+label {
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    font-size: 11px !important;
+    letter-spacing: 1px !important;
+    color: #555 !important;
+    margin-bottom: 8px !important;
+}
+
+.hr-dashed {
+    border-top: 2px dashed #f0f0f0 !important;
+    margin: 30px 0 !important;
+}
+
+/* DataTables Global Overrides */
+.dataTables_wrapper .dataTables_filter input {
+    border-radius: 20px !important;
+    border: 1px solid #eee !important;
+    padding: 8px 15px !important;
+    margin-left: 10px !important;
+}
+
+.dataTables_wrapper .dataTables_length select {
+    border-radius: 10px !important;
+    border: 1px solid #eee !important;
+    padding: 5px !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    border-radius: 12px !important;
+    border: none !important;
+    background: #fff !important;
+    color: var(--premium-dark) !important;
+    margin: 0 4px !important;
+    padding: 8px 16px !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05) !important;
+    font-weight: 700 !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    background: var(--premium-primary) !important;
+    color: #fff !important;
+    border: none !important;
+    box-shadow: 0 5px 15px rgba(45, 62, 51, 0.3) !important;
+}
+
+.dataTables_wrapper .dataTables_info {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: #888;
+    margin-top: 20px;
+}
+
+/* Typography Consistency for all pages */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Syne', sans-serif !important;
+}
+
+.breadcrumb {
+    background: transparent !important;
+    padding: 0 !important;
+    margin-bottom: 20px !important;
+}
+
+/* Error/Success Wraps */
+.errorWrap {
+    padding: 15px;
+    margin: 0 0 25px 0;
+    background: #fff;
+    border-left: 5px solid var(--premium-accent);
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+}
+
+.succWrap {
+    padding: 15px;
+    margin: 0 0 25px 0;
+    background: #fff;
+    border-left: 5px solid #5cb85c;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+}

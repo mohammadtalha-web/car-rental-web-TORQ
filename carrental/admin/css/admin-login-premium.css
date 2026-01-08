@@ -1,0 +1,115 @@
+@import url('../../assets/css/premium-ui.css');
+
+.welcome-page {
+    background: var(--premium-primary);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+.welcome-page::before {
+    content: '';
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    background: radial-gradient(circle, rgba(232, 195, 161, 0.05) 0%, rgba(0, 0, 0, 0) 70%);
+    top: -25%;
+    left: -25%;
+    animation: pulse 10s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.login-card {
+    background: #fff;
+    border-radius: 40px;
+    padding: 60px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 10;
+}
+
+.login-card h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: var(--premium-dark);
+    text-align: center;
+}
+
+.login-card p {
+    text-align: center;
+    color: #888;
+    margin-bottom: 40px;
+}
+
+.login-card .form-control {
+    background: #f8f9fa !important;
+    border: none !important;
+    border-radius: 15px !important;
+    padding: 18px 25px !important;
+    font-size: 16px !important;
+    margin-bottom: 20px !important;
+}
+
+.login-card label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #aaa;
+}
+
+.login-card .btn-login {
+    background: var(--premium-primary) !important;
+    color: #fff !important;
+    border: none !important;
+    padding: 18px !important;
+    width: 100% !important;
+    border-radius: 15px !important;
+    font-weight: 800 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+    margin-top: 10px !important;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+}
+
+.login-card .btn-login:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(45, 62, 51, 0.2) !important;
+}
+
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    color: var(--premium-primary);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
